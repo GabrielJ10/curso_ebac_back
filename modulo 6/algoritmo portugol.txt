@@ -1,0 +1,58 @@
+Algoritmo Acordar_e_Levantar
+// Este algoritmo descreve o processo de acordar, levantar, tomar café, e escovar os dentes de uma pessoa.
+
+Var
+    despertador: Lógico
+    energia: Inteiro
+
+Inicio
+    // Definindo se o despertador tocou ou não
+    Escreva("O despertador tocou? (true/false): ")
+    Leia(despertador)
+
+    Se despertador = verdadeiro Então
+        Escreva("Você ouviu o despertador tocar e acordou.")
+    Senão
+        Escreva("Você não ouviu o despertador tocar e continua dormindo.")
+    FimSe
+
+    // Avaliando o nível de energia
+    Escreva("Quão energizado você se sente agora? (em uma escala de 1 a 10): ")
+    Leia(energia)
+
+    Se energia >= 7 Então
+        Escreva("Você se sente energizado o suficiente para se levantar.")
+    Senão
+        Escreva("Você está se sentindo um pouco cansado, mas precisa levantar de qualquer forma.")
+    FimSe
+
+    // Levantando da cama
+    Se energia >= 5 Então
+        Escreva("Você se levanta lentamente da cama, espreguiçando-se.")
+    Senão
+        Escreva("Você se esforça para se levantar da cama, ainda sonolento.")
+    FimSe
+
+    // Tomar café
+    Escreva("Você deseja tomar café da manhã agora? (true/false): ")
+    Leia(tomarCafe)
+
+    Se tomarCafe = verdadeiro Então
+        Escreva("Você prepara uma xícara de café ou chá e um pequeno lanche para o café da manhã.")
+    Senão
+        Escreva("Você decide pular o café da manhã por enquanto e continuar seu dia.")
+    FimSe
+
+    // Escovar os dentes
+    Escreva("Você escovou os dentes hoje? (true/false): ")
+    Leia(escovarDentes)
+
+    Se escovarDentes = falso Então
+        Escreva("Você escova os dentes agora para manter a higiene bucal.")
+    Senão
+        Escreva("Você já escovou os dentes hoje e continua com a sua rotina.")
+    FimSe
+
+    // Concluindo o processo
+    Escreva("Agora você está pronto para enfrentar o dia!")
+FimAlgoritmo
